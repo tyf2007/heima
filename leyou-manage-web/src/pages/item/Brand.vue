@@ -3,7 +3,7 @@
     <v-card-title>
       <v-btn color="primary" @click="addBrand">新增品牌</v-btn>
       <!--搜索框，与search属性关联-->
-      <v-spacer/>
+      <v-spacer/> <!--空间隔离组件-->
       <v-flex xs3>
       <v-text-field label="输入关键字搜索" v-model.lazy="search" append-icon="search" hide-details/>
       </v-flex>
