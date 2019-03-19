@@ -2,13 +2,16 @@ package com.heima.item.service;
 
 import com.heima.item.dao.CategoryMapper;
 import com.heima.item.pojo.Category;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class CategoryService {
+
     @Autowired
     private CategoryMapper categoryMapper;
     /**
